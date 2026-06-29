@@ -44,6 +44,6 @@ jobs:
     needs:
     - scan-and-evaluate
     with:
-      input-data: ${{ needs.scan-and-evaluate.outputs.policy-subject }}
+      input-data: ${{ needs.download-and-evaluate.outputs.policy-subject }}
       checkpoint-type: workflow
       checkpoint-position: within
